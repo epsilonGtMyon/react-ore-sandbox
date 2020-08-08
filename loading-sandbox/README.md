@@ -11,6 +11,6 @@ npx create-react-app loading-sandbox --use-npm --template typescript
 
 ```
 npm update typescript
-npm install react-router-dom @types/react-router-dom react-redux @reduxjs/toolkit
+npm install react-router-dom @types/react-router-dom react-redux @types/react-redux @reduxjs/toolkit
 ```
 
