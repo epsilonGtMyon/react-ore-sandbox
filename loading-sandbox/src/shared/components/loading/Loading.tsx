@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import ReactDOM from "react-dom";
+import "./Loading.css";
 
 export type LoadingProp = {
   visible: boolean;
@@ -30,19 +31,11 @@ const Loading: React.FC<LoadingProp> = (props) => {
   }
 
   return ReactDOM.createPortal(
-    <div style={style} tabIndex={0} ref={thisRef}></div>,
+    <div className="loading" tabIndex={0} ref={thisRef}>
+      <div className="loading-spinner"></div>
+    </div>,
     loaderContainer
   );
-};
-
-const style = {
-  position: "fixed" as const,
-  top: 0,
-  bottom: 0,
-  left: 0,
-  right: 0,
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
-  cursor: "wait",
 };
 
 export { Loading };
