@@ -7,6 +7,7 @@ import { Sandbox01 } from "./sandbox01/Sandbox01";
 import { Sandbox02 } from "./sandbox02/Sandbox02";
 import { Sandbox03 } from "./sandbox03/Sandbox03";
 import { Sandbox04 } from "./sandbox04/Sandbox04";
+import { Sandbox05 } from "./sandbox05/Sandbox05";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Link to="/sandbox02">sandbox02</Link> |
           <Link to="/sandbox03">sandbox03</Link> |
           <Link to="/sandbox04">sandbox04</Link> |
+          <Link to="/sandbox05">sandbox05</Link> |
         </div>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -33,6 +35,7 @@ function App() {
           <Route path="/sandbox02" component={Sandbox02} />
           <Route path="/sandbox03" component={Sandbox03} />
           <Route path="/sandbox04" component={Sandbox04} />
+          <Route path="/sandbox05" component={Sandbox05} />
         </Switch>
       </BrowserRouter>
     </div>
